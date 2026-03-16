@@ -12,17 +12,28 @@
   font-weight: 600;
  }
  header {
-  width: 100%;
-  height: auto;
-  min-height: 300px;
-  background: url("../assets/images/banner.webp");
-  padding: 50px 0; 
-  background-size: cover;
-  background-position: center;
- }
-  #logo {
-    width: 160px;
-  }
+    position: relative; /* Becomes the anchor for the logo */
+    overflow: hidden;   /* Keeps the banner from leaking out */
+    line-height: 0;
+    width: 100%;
+    min-height: 300px;  /* This ensures the black area is tall enough */
+    background: #000;   /* Optional: keeps it black while image loads */
+}
+
+#logo {
+    position: absolute; /* Lifts the logo up to float over the banner */
+    top: 20px;          /* Adjust position from top */
+    left: 20px;         /* Adjust position from left */
+    z-index: 10;        /* Ensures it stays on top of the banner */
+    width: 160px;       /* Keeps your logo at the size you had before */
+    height: auto;
+}
+
+.main-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
  nav {
   width: 100%;
   height: 80px;
