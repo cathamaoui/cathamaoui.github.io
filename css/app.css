@@ -69,30 +69,64 @@ main {
   width: 100%;
 }
 
-#about, #skills, #contact {
-    width: 100%;
-    padding: 80px 100px;
-    background: transparent; 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+/* 4. Content Sections (Using Flexbox to fix the mess) */
+main {
+  width: 100%;
 }
 
-/* 5. Specific Section Layouts */
+#about {
+    width: 100%;
+    padding: 80px 10%;
+    background: transparent; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;          /* This aligns the photo and text side-by-side */
+    align-items: center;    /* Centers them vertically */
+    gap: 50px;              /* Adds clean space between them */
+}
+
+/* 5. About Me Photo and Text */
 #leftAbout {
-    width: 30%;
-    float: left;
+    flex: 1;                /* Gives the photo its own space */
 }
 
 #bioPic {
-    border: 4px solid #fff;
-    border-radius: 16px;
-    width: 80%;
+    border: 3px solid rgba(0, 212, 255, 0.5); /* Teal glow border */
+    border-radius: 20px;
+    width: 100%;            /* Fills the leftAbout container */
+    max-width: 350px;       /* Keeps it from getting too huge */
+    height: auto;
 }
 
 #rightAbout {
-    width: 70%;
-    float: left;
+    flex: 2;                /* Gives the text more room than the photo */
 }
 
 #rightAbout h1 {
     margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* 6. Skills & Contact Sections */
+#skills, #contact {
+    width: 100%;
+    padding: 80px 10%;
+    background: transparent; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column; /* Stacks the inputs neatly */
+    gap: 15px;
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.05); /* Transparent dark input */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
 }
