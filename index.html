@@ -23,43 +23,40 @@
   </nav>
 
   <main>
+    <!-- About Section ends around Line 31 -->
     <div id="about">
-      <div id="leftAbout">
-        <!-- Assuming bioPic is still in the assets folder -->
-        <img id="bioPic" src="assets/images/bioPic.png" alt="Dakuma">
-      </div>
-      <div id="rightAbout">
-        <h1>About Me:</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
+      ... (your about content) ...
     </div>
 
+    <!-- START OF NEW SKILLS SECTION (Line 33) -->
     <div id="skills">
       <h1>My Skills</h1>
-      <div class="skill">
-        <div class="topSkill"><h1>HTML</h1></div>
-        <div class="bottomSkill"><i class="devicon-html5-plain colored"></i></div>
-      </div>
-      <div class="skill">
-        <div class="topSkill"><h1>CSS</h1></div>
-        <div class="bottomSkill"><i class="devicon-css3-plain colored"></i></div>
-      </div>
-      <div class="skill">
-        <div class="topSkill"><h1>Javascript</h1></div>
-        <div class="bottomSkill"><i class="devicon-javascript-plain colored"></i></div>
-      </div>
+      <div class="skills-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 40px;">
+        
+        <div class="skill">
+          <div class="topSkill"><h1>HTML</h1></div>
+          <div class="bottomSkill"><i class="devicon-html5-plain colored"></i></div>
+        </div>
+
+        <div class="skill">
+          <div class="topSkill"><h1>CSS</h1></div>
+          <div class="bottomSkill"><i class="devicon-css3-plain colored"></i></div>
+        </div>
+
+        <div class="skill">
+          <div class="topSkill"><h1>Javascript</h1></div>
+          <div class="bottomSkill"><i class="devicon-javascript-plain colored"></i></div>
+        </div>
+
+      </div> 
     </div>
+    <!-- END OF SKILLS SECTION (Line 55) -->
 
     <div id="contact">
-      <h1>Contact Me</h1>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="enter name" required>
-        <input type="email" name="email" placeholder="enter email" required>
-        <textarea name="message" rows="5" maxlength="500" placeholder="your message here..." required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      ... (your contact form) ...
     </div>
   </main>
+
 
   <footer>
     &copy; 2026 CatHamoui, all rights reserved.
