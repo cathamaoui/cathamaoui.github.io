@@ -8,60 +8,48 @@
   <title>Hello Friend...</title>
 </head>
 <body>
-  <header style="position: relative;"> 
-      <img id="logo" src="assets/images/medloclogo.png" alt="medloclogo">
-    <img src="banner.webp" alt="Banner" class="main-banner" style="width: 100%; height: auto;">
-</header>
-  
-  <nav>
-    <!-- Your navigation links go here -->
-  </nav>
 
-  <nav>
-<!-- ... rest of code ... -->
+  <header style="position: relative;">
+    <!-- Logo and Banner in the same folder -->
+    <img id="logo" src="medloclogo.png" alt="Medloc Logo">
+    <img src="banner.webp" alt="Banner" class="main-banner" style="width: 100%; height: auto;">
   </header>
+
   <nav>
     <a href="#" title="home">HOME</a>
     <a href="#about" title="about">ABOUT</a>
     <a href="#skills" title="skills">SKILLS</a>
     <a href="#contact" title="contact">CONTACT</a>
   </nav>
+
   <main>
     <div id="about">
       <div id="leftAbout">
+        <!-- Assuming bioPic is still in the assets folder -->
         <img id="bioPic" src="assets/images/bioPic.png" alt="Dakuma">
       </div>
       <div id="rightAbout">
         <h1>About Me:</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
+    </div>
+
     <div id="skills">
       <h1>My Skills</h1>
       <div class="skill">
-        <div class="topSkill">
-          <h1>HTML</h1>
-        </div>
-        <div class="bottomSkill">
-          <i class="devicon-html5-plain colored"></i>
-        </div>
+        <div class="topSkill"><h1>HTML</h1></div>
+        <div class="bottomSkill"><i class="devicon-html5-plain colored"></i></div>
       </div>
       <div class="skill">
-        <div class="topSkill">
-          <h1>CSS</h1>
-        </div>
-        <div class="bottomSkill">
-          <i class="devicon-css3-plain colored"></i>
-        </div>
+        <div class="topSkill"><h1>CSS</h1></div>
+        <div class="bottomSkill"><i class="devicon-css3-plain colored"></i></div>
       </div>
       <div class="skill">
-        <div class="topSkill">
-          <h1>Javascript</h1>
-        </div>
-        <div class="bottomSkill">
-          <i class="devicon-javascript-plain colored"></i>
-        </div>
+        <div class="topSkill"><h1>Javascript</h1></div>
+        <div class="bottomSkill"><i class="devicon-javascript-plain colored"></i></div>
       </div>
     </div>
+
     <div id="contact">
       <h1>Contact Me</h1>
       <form id="contactForm">
@@ -72,8 +60,10 @@
       </form>
     </div>
   </main>
+
   <footer>
     &copy; 2026 CatHamoui, all rights reserved.
   </footer>
+
 </body>
 </html>
