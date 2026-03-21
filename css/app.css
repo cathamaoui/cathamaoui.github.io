@@ -43,13 +43,18 @@ header {
 /* 3. Navigation */
 nav {
   width: 100%;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.1); /* Transparent glass look */
+  height: 100px; /* Made it a bit taller to give you room */
+  background: rgba(255, 255, 255, 0.05); 
   backdrop-filter: blur(10px);
-  text-align: center;
-  padding-top: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* This is the magic part */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-end;    /* Pushes words to the bottom */
+  padding-bottom: 20px;    /* Pulls them slightly up from the very bottom edge */
 }
+
 
 nav a {
     text-decoration: none;
