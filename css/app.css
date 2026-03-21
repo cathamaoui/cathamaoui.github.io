@@ -76,41 +76,29 @@ nav a {
     margin: 0 21px;
 }
 
-/* 4. Content Sections (Transparent to show glows) */
-main {
-  width: 100%;
-}
-
-/* 4. Content Sections (Using Flexbox to fix the mess) */
-main {
-  width: 100%;
-}
-
+/* 4. About Section - Clean & Centered Layout */
 #about {
     width: 100%;
     padding: 80px 10%;
     background: transparent; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;          /* This aligns the photo and text side-by-side */
-    align-items: center;    /* Centers them vertically */
-    gap: 50px;              /* Adds clean space between them */
+    display: flex;          
+    flex-direction: column; /* This forces the title ABOVE the text */
+    align-items: center;    /* This centers the blocks horizontally */
+    text-align: center;     /* This centers the text inside the blocks */
 }
 
-/* 5. About Me Photo and Text */
-#leftAbout {
-    flex: 1;                /* Gives the photo its own space */
+#about h1 {
+    margin-bottom: 25px;
+    font-size: 3em;
+    color: #00d4ff;         /* Your MedLoc teal */
 }
 
-#bioPic {
-    border: 3px solid rgba(0, 212, 255, 0.5); /* Teal glow border */
-    border-radius: 20px;
-    width: 100%;            /* Fills the leftAbout container */
-    max-width: 350px;       /* Keeps it from getting too huge */
-    height: auto;
-}
-
-#rightAbout {
-    flex: 2;                /* Gives the text more room than the photo */
+#about p {
+    max-width: 850px;       /* Keeps the text from stretching too wide */
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #eee;
 }
 
 #rightAbout h1 {
