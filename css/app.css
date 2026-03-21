@@ -52,7 +52,7 @@ nav {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: flex-end;    /* Pushes words to the bottom */
-  padding-bottom: 20px;    /* Pulls them slightly up from the very bottom edge */
+  padding-bottom: 30px;    /* Pulls them slightly up from the very bottom edge */
 }
 
 
