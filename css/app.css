@@ -140,3 +140,13 @@ input, textarea {
     cursor: pointer;     
     margin-top: 10px;    /* Adds a little space above the button */
 }
+/* Styling for your new nurse, hospital, and homecare icons */
+.skill-icon {
+    width: 100px;        /* Keeps the images small and uniform */
+    height: 100px;
+    object-fit: cover;   /* Ensures the image doesn't stretch or squish */
+    border-radius: 50%;  /* Makes the icons perfectly circular */
+    border: 3px solid rgba(0, 212, 255, 0.5); /* Adds a Medloc teal glow border */
+    margin-top: 15px;    /* Adds space between the title and the image */
+    display: inline-block;
+}
