@@ -25,24 +25,19 @@ body {
 header {
     position: relative; 
     overflow: hidden;   
-    line-height: 0;
+    line-height: 0;      /* Removes the tiny gap under the image */
     width: 100%;
     background: #000;
 }
 
-#logo {
-    position: absolute; 
-    top: 20px;          
-    left: 20px;         
-    z-index: 10;        
-    width: 160px;       
-    height: auto;
-}
+
 
 .main-banner {
-    width: 100%; /* Set to 100% to fill the screen like Medloc */
-    height: auto;
+    width: 100%;        /* Fills the screen width */
+    height: auto;       /* Keeps the image's original shape */
     display: block;
+    /* Optional: Adds a subtle teal glow to the bottom to match your theme */
+    border-bottom: 2px solid rgba(0, 212, 255, 0.2);
 }
 
 /* 3. Navigation */
