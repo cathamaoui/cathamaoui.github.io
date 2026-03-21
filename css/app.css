@@ -158,7 +158,4 @@ input, textarea {
   padding: 50px 20px;     /* Adds some breathing room */
 }
 
-#about p {
-  max-width: 800px;       /* Keeps the text from stretching too wide on big screens */
-  line-height: 1.6;       /* Makes the paragraph easier to read */
-}
+
