@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css">
-<title>Hello Friend...</title>
+  <link href="https://fonts.googleapis.com" rel="stylesheet">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="css/app.css">
   <title>Hello Friend...</title>
 </head>
 <body>
 
-   <header>
-    <!-- Your floating corner logo -->
+  <header>
     <img id="corner-logo" src="assets/images/logomedloc.png" alt="MedLoc Logo">
-    
-    <!-- Your main banner -->
     <img src="assets/images/newbanner.png" alt="MedLoc Banner" class="main-banner">
   </header>
-
-
- 
 
   <nav>
     <a href="#" title="home">HOME</a>
@@ -30,44 +23,50 @@
   </nav>
 
   <main>
-    Connecting healthcare professionals with facilities across New Brunswick. A web and mobile app able to pair your chosen work day to healthcare organizations staffing needs province-wide. Here you can support colleagues through shift sharing, select short shifts (2 hrs +), split shifts, and have your ride to work covered! Get paid within 24 hours. Work as much or as little as you want. Know your patient to nurse ratios. Welcome to professional nursing on your terms.<!-- About Section ends around Line 31 -->
-    <div id="about">
-      
-    </div>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h1>About MedLoc</h1>
+      <p>
+        Connecting healthcare professionals with facilities across New Brunswick. 
+        A web and mobile app able to pair your chosen work day to healthcare 
+        organizations staffing needs province-wide. <strong>Welcome to professional nursing on your terms.</strong>
+      </p>
+    </section>
 
-    <!-- START OF NEW SKILLS SECTION (Line 33) -->
-    <div id="skills">
-      <h1>Services</h1>
+    <!-- SERVICES / SKILLS SECTION -->
+    <section id="skills">
+      <h2>Services</h2>
       <div class="skills-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 40px;">
-        
+          
+        <!-- Nurse Card -->
         <div class="skill">
-          <div class="topSkill"><h1>Nurse</h1></div>
+          <div class="topSkill"><h3>Nurse</h3></div>
           <div class="bottomSkill">
-  <img src="assets/images/nurse.jpg" alt="Nurse Icon" class="skill-icon">
-</div>
-
+            <img src="assets/images/nurse.jpg" alt="Nurse Icon" class="skill-icon">
+          </div>
         </div>
 
+        <!-- Hospital Card -->
         <div class="skill">
-          <div class="topSkill"><h1>Hospital</h1></div>
-         <div class="bottomSkill">
-    <img src="assets/images/Hospital.jpg" alt="Hospital Icon" class="skill-icon">
-</div>
-
-        </div>
-
-        <div class="skill">
-          <div class="topSkill"><h1>Homecare</h1></div>
+          <div class="topSkill"><h3>Hospital</h3></div>
           <div class="bottomSkill">
-    <img src="assets/images/homecare.jpeg" alt="Homecare Icon" class="skill-icon">
-</div>
-
+            <img src="assets/images/Hospital.jpg" alt="Hospital Icon" class="skill-icon">
+          </div>
         </div>
 
-      </div> 
-    </div>
-    <!-- END OF SKILLS SECTION (Line 55) -->
-    <div id="contact">
+        <!-- Homecare Card -->
+        <div class="skill">
+          <div class="topSkill"><h3>Homecare</h3></div>
+          <div class="bottomSkill">
+            <img src="assets/images/homecare.jpeg" alt="Homecare Icon" class="skill-icon">
+          </div>
+        </div>
+
+      </div> <!-- End of skills-container -->
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
       <h1>Get in touch</h1>
       <form id="contactForm" action="https://formspree.io" method="POST">
         <input type="text" name="name" placeholder="Enter your full name here" required>
@@ -75,13 +74,8 @@
         <textarea name="message" rows="5" maxlength="500" placeholder="Type your message here..." required></textarea>
         <button type="submit" id="submitBtn">Send Message</button>
       </form>
-    </div>
-
-    <div id="contact">
-      
-    </div>
+    </section>
   </main>
-
 
   <footer>
     &copy; 2026 CatHamaoui, all rights reserved.
