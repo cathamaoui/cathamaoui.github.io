@@ -162,3 +162,15 @@ input, textarea {
     margin-top: 5px;    /* Adds space between the title and the image */
     display: inline-block;
 }
+#about {
+  display: flex;
+  flex-direction: column; /* Stacks title above text */
+  align-items: center;    /* Centers items horizontally */
+  text-align: center;     /* Centers the text within the tags */
+  padding: 50px 20px;     /* Adds some breathing room */
+}
+
+#about p {
+  max-width: 800px;       /* Keeps the text from stretching too wide on big screens */
+  line-height: 1.6;       /* Makes the paragraph easier to read */
+}
