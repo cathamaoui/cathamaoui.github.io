@@ -108,6 +108,7 @@ nav a {
 
 /* 6. Skills & Contact Sections */
 #skills, #contact {
+    color: #00d4ff;
     width: 100%;
     padding: 80px 10%;
     background: transparent; 
