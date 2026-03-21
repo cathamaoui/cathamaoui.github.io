@@ -130,3 +130,13 @@ input, textarea {
     padding: 12px;
     border-radius: 8px;
 }
+#submitBtn {
+    padding: 20px;       /* This makes the button vertically taller */
+    background: #00d4ff; /* MedLoc teal color */
+    color: #000;         /* Black text for contrast */
+    font-weight: bold;   
+    border: none;        
+    border-radius: 8px;  
+    cursor: pointer;     
+    margin-top: 10px;    /* Adds a little space above the button */
+}
