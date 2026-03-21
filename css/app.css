@@ -142,8 +142,8 @@ input, textarea {
 }
 /* Styling for your new nurse, hospital, and homecare icons */
 .skill-icon {
-    width: 85px;        /* Keeps the images small and uniform */
-    height: 85px;
+    width: 120px;        /* Keeps the images small and uniform */
+    height: 120px;
     object-fit: cover;   /* Ensures the image doesn't stretch or squish */
     border-radius: 50%;  /* Makes the icons perfectly circular */
     border: 2px solid rgba(0, 212, 255, 0.5); /* Adds a Medloc teal glow border */
