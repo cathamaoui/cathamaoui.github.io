@@ -22,13 +22,25 @@ body {
 }
 
 /* 2. Header & Floating Logo */
+/* 2. Header & Floating Logo */
 header {
-    position: relative; 
+    position: relative; /* Acts as the anchor for the small logo */
     overflow: hidden;   
-    line-height: 0;      /* Removes the tiny gap under the image */
+    line-height: 0;     /* Removes the tiny gap under the banner image */
     width: 100%;
     background: #000;
 }
+
+#corner-logo {
+    position: absolute; 
+    top: 20px;          /* Vertical space from the top edge */
+    left: 20px;         /* Horizontal space from the left edge */
+    z-index: 10;        /* Ensures it stays ON TOP of the banner */
+    width: 60px;        /* Shrunk to be a small icon */
+    height: auto;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5)); /* Helps it pop against the banner */
+}
+
 
 
 
